@@ -1,0 +1,110 @@
+$breakpoints: (
+    xs: 480px,
+    sm: 640px, 
+    md: 800px, 
+    lg: 1024px,
+    xlg: 1200px
+);
+
+$breakpoint: 800px;
+$container-max-width: 115.8rem;
+$gap: 2.4rem;
+
+// project colors
+$lime-green: hsl(136, 65%, 51%);
+$dark-blue: hsl(233, 26%, 24%);
+$bright-cyan: hsl(192, 70%, 51%);
+
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+// colors
+$red: hsl(0, 87%, 67%);
+$red-light: lighten($red, 30);
+$blue-dark: $dark-blue; 
+$blue: $bright-cyan;
+$blue-light: lighten($blue, 30);
+$green: $lime-green;
+$green-light: lighten($green, 30);
+$cyan: hsl(180, 66%, 49%);
+$cyan-light: lighten($cyan, 30);
+$grey-dark: #666;
+$grey: $grayish-blue;
+$grey-light: $light-grayish-blue;
+$grey-very-light: $very-light-gray;
+$white: #fff;
+$black: #000;
+
+// functional colors
+$dark: $blue-dark;
+$light: $grey-light;
+$primary: $green;
+$primary-light: $green-light;
+$secondary: $blue;
+$secondary-light: $blue-light;
+
+$error: $red;
+$warning: $red;
+$success: $green;
+
+$link-hover-color: $primary;
+
+// gradients
+$linear-gradient-primary: linear-gradient(90deg, $green, $blue);
+$linear-gradient-primary-light: linear-gradient(90deg, lighten($green, 20), lighten($blue, 20));
+
+// typography
+$font-family-primary: 'Public Sans', sans-serif;
+$font-family-secondary: 'Public Sans', sans-serif;
+$font-size-primary: 1.8rem;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// borders
+$border-color: $grey-light;
+$border-radius-sm: .3rem;
+$border-radius-md: .5rem;
+$border-radius-lg: 1rem;
+
+// shadows
+$boxShadow: 0 0 13px 3px rgba(0, 0, 0, 0.1); // TO DO remove it
+$box-shadow-primary: 0 0 13px 3px rgba(0, 0, 0, 0.1);
+
+// Body
+$body-background-color: $white;
+
+// Header
+$header-link-font-family: $font-family-secondary;
+$header-link-font-size: 1.4rem;
+$header-mobile-link-font-size: 1.8rem;
+$header-link-font-weight: $font-weight-regular;
+$header-link-color: $grey;
+$header-link-hover-color: $dark;
+$header-background-color: $white;
+$header-mobile-link-color: $grey;
+$header-mobile-background-color: $white;
+$header-mobile-box-shadow: $box-shadow-primary;
+
+$hamburger-height: 1.6rem;
+$hamburger-button-line-width: 2.6rem;
+$hamburger-button-line-height: 2px;
+$hamburger-button-color: $dark;
+
+$dropdown-link-font-family: $header-link-font-family;
+$dropdown-link-font-weight: $header-link-font-weight;
+$dropdown-link-hover-color: $dark;
+$dropdown-background-color: $grey-light;
+$dropdown-mobile-background-color: $grey-light;
+$dropdown-box-shadow: $box-shadow-primary;
+
+// Sections
+$section-heading-font-weight: $font-weight-light;
+$section-heading-color: $dark;
+
+$section-subheading-color: $grey;
+
+// Footer
+$footer-link-color:  $grey-light;
+$footer-background-color: $dark;

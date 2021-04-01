@@ -1,0 +1,155 @@
+.footer {
+    padding: 3.5rem 0;
+    background-color: $dark;
+    @include breakpoint(md) {
+      padding: 5.5rem 0;
+    }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(md) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__brand {
+    @include breakpoint(md) {
+      margin: 0;
+      min-height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 3rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    @include breakpoint(lg) {
+      width: 24%;
+
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      min-height: 10rem;
+        justify-content: space-between
+    }
+
+    &__link {
+      @extend .cool-link;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      color: $footer-link-color;
+
+      @include breakpoint(md) {
+       margin: 0; 
+      }
+      
+      @include breakpoint(lg) {
+        font-size: 1.6rem;
+      }
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+  &__socials {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(md) {
+      margin: 0;
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+
+        @include breakpoint(md) {
+          margin-right: 2rem;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        .icon {
+          * {
+            fill: $primary !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__cta {
+    margin: 3rem 0;
+
+    @include breakpoint(md) {
+      margin: 0;
+      min-height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+      min-width: 30rem;
+      text-align: right;
+    }
+
+    .btn {
+      margin-bottom: 3rem;
+      max-width: 16.5rem;
+      align-self: flex-end;
+
+      @include breakpoint(md) {
+        margin: 0;
+      }
+    }
+
+  }
+
+  &__note {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: $grey;
+  }
+
+  &__copyright {
+      padding-top: 6rem;
+      .attribution {
+          max-width: 28rem;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 1.4rem;
+          letter-spacing: 2px;
+          line-height: 1.6;
+          color: $grey;
+
+          a {
+            @extend .cool-link;
+            color: $footer-link-color;
+          }
+      }
+  }
+}

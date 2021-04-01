@@ -1,0 +1,80 @@
+.features {
+    background-color: $grey-light;
+    
+    &__container {
+
+    }
+
+    &__items {
+        @include breakpoint(md) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    .feature {
+        &__item {
+            position: relative;
+            padding: 1.5rem 0;
+
+
+            @include breakpoint(md) {
+                width: 48%;
+                margin-bottom: 0;
+            }
+
+            @include breakpoint(lg) {
+                width: 21%;
+                margin-bottom: 0;
+            }
+        }
+
+        &__image {
+            margin-bottom: 2.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include breakpoint(md) {
+                justify-content: flex-start;
+            }
+
+            img {
+                width: 6.5rem;
+                height: 6.5rem;
+
+                @include breakpoint(md) {
+                    width: 7.2rem;
+                    height: 7.2rem;
+                }
+            }
+        }
+
+        &__heading {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: $font-weight-light;
+
+            @include breakpoint(md) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__text {
+            max-width: 32rem;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-size: 1.4rem;
+            color: $grey;
+
+            @include breakpoint(md) {
+                max-width: initial;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+}

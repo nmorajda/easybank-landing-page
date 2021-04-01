@@ -1,0 +1,39 @@
+.section {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    &__header {
+        margin-bottom: 5rem;
+
+        @include breakpoint(md) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+        font-size: 3.2rem;
+        line-height: 1.4;
+        color: $section-heading-color;
+        font-weight: $section-heading-font-weight;
+
+        @media (min-width: $breakpoint)
+        {
+            font-size: 3.6rem
+        }
+    }
+
+    &__subheading {
+        max-width: 46rem;
+        margin: 0 auto;
+        line-height: 1.5;
+        color: $section-subheading-color;
+        @media (min-width: $breakpoint)
+        {
+            max-width: 61rem;
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
+}
